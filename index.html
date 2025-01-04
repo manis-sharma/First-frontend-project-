@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Manish Sharma</title>
+    <link rel="icon" href="images/title photo.jpg" type="image/x-icon">
+
+
+    <!-- bootstrap css cdn link  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+
+    <!-- custom css file -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- bootstrap icon cdn link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css" />
+
+    <!-- for adding animation to website I have use AOS library 
+    AOS Library css file cdn link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- navbar starts -->
+    <nav id="navbar-top" class="navbar navbar-expand-lg navbar-light bg-white ">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand fw-bold fs-2" href="#" style="color: #3f396d">Portfolio</a>
+            <button class="nav-menu d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <i class="bi bi-menu-button-fill"></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav gap-4" style="font-size: 1.1rem">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <button>
+                <a class="c-btn ms-4 py-2 px-4 rounded-pill d-none d-md-block" id="contact-btn" href="#contact">
+                    Contact
+                </a>
+            </button>
+
+    </nav>
+    <!-- navbar ends  -->
+
+    <!-- home section  -->
+    <section class="home pt-5 pb-5" id="home">
+        <div class="row justify-content-evenly align-middle">
+            <!-- here data-aos is used for adding aos animation  -->
+            <div class="col-10 col-md-6 text-center text-md-start" data-aos="slide-right">
+                <h2 style="color: #3f396d">
+                    Hello! I Am <br /><span class="c-orange">Manish Sharma </span>
+                </h2>
+                <p class="text-muted">
+                    I'm A Web Developer having expertise of
+                    creating website with fully responsive.
+                </p>
+                <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+                    Let's Explore
+                </button>
+                <a href="" class="link ms-4 d-none">See My Work</a>
+            </div>
+            <div class="col-10 col-md-4 d-none d-md-block">
+                <img src="images/banner-01.jpg" class="img-fluid" alt="" />
+            </div>
+        </div>
+    </section>
+    <!-- home section ends here -->
+
+    <!-- expertise section starts -->
+    <section class="expertise mt-5" id="service">
+        <div class="heading text-center">
+            <small>My Expertise</small>
+            <h3>
+                Provide Wide Range of <br />
+                Digital Services
+            </h3>
+        </div>
+        <div class="row justify-content-evenly mt-5">
+            <div class="col-10 col-md-4" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="img">
+                        <img src="images/service-icon1.png" class="w-25 img-fluid img" alt="" />
+                    </div>
+                    <div class="content mt-3">
+                        <h4>Web Design</h4>
+                        <p class="text-muted">
+                            Passionate about creating visually stunning designs 
+                            that captivate users and efficient navigation.
+                        </p>
+                        <a href="" class="link">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-10" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="img">
+                        <img src="images/service-icon2.png" class="w-25 img-fluid img" alt="" />
+                    </div>
+                    <div class="content mt-3">
+                        <h4>Web Development</h4>
+                        <p class="text-muted">
+                            Skilled in building responsive and efficient websites using the latest front-end technologies.
+                        </p>
+                        <a href="" class="link">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-10" data-aos="fade-up">
+                <div class="service-card">
+                    <div class="img">
+                        <img src="images/service-icon3.png" class="w-25 img-fluid img" alt="" />
+                    </div>
+                    <div class="content mt-3">
+                        <h4>Debugging</h4>
+                        <p class="text-muted">
+                            Strong problem-solving abilities to identify and resolve coding issues for seamless functionality.
+                        </p>
+                        <a href="" class="link">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- expertise section ends  -->
+
+    <section class="skill mt-5 py-5" id="about">
+        <div class="row justify-content-evenly">
+            <!-- Left Section with Progress Bars -->
+            <div class="col-10 col-md-5 skill-with-progress" data-aos="slide-right">
+                <div class="row justify-content-evenly">
+                    <!-- HTML & CSS Progress -->
+                    <div class="col-10 col-md-6">
+                        <div class="progress-card ms-3 ms-md-0">
+                            <div class="circular-progress html-css">
+                                <span class="progress-value html-progress">80%</span>
+                            </div>
+                            <br />
+                            <span class="text">HTML & CSS</span>
+                        </div>
+                    </div>
+                    <!-- JavaScript Progress -->
+                    <div class="col-10 col-md-6 mt-4 mt-md-0">
+                        <div class="progress-card ms-3 ms-md-0">
+                            <div class="circular-progress javascript">
+                                <span class="progress-value javascript-progress">40%</span>
+                            </div>
+                            <br />
+                            <span class="text">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-evenly mt-4">
+                    <!-- Python Progress -->
+                    <div class="col-10 col-md-6">
+                        <div class="progress-card ms-3 ms-md-0">
+                            <div class="circular-progress python">
+                                <span class="progress-value python-progress">20%</span>
+                            </div>
+                            <br />
+                            <span class="text">Python</span>
+                        </div>
+                    </div>
+                    <!-- C Progress -->
+                    <div class="col-10 col-md-6 mt-4 mt-md-0">
+                        <div class="progress-card ms-3 ms-md-0">
+                            <div class="circular-progress c">
+                                <span class="progress-value c-progress">40%</span>
+                            </div>
+                            <br />
+                            <span class="text">C</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right Section with Details -->
+            <div class="col-10 col-md-5 skill-detail" data-aos="slide-left">
+                <div class="heading mt-5 mt-md-3">
+                    <small>My Skills</small>
+                    <h3>Beautiful & Unique Digital Experiences</h3>
+                    <p class="text-muted">
+                        I specialize in crafting engaging, user-friendly designs 
+                        and functional web solutions, tailored to meet modern 
+                        digital needs.
+                    <p class="text-muted">
+                        Focused on delivering innovative solutions and seamless user experiences.
+                    </p>
+                    <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+                        <a href="SampleCV.pdf" download="SampleCV" style="text-decoration: none; color: #fff">
+                            Download CV
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- skill section end here -->
+
+    <!-- portfolio section starts here -->
+    <section class="portfolio" id="portfolio">
+        <div class="heading text-center pt-5">
+            <small>Creative Work</small>
+            <h3>Check My Portfolio</h3>
+        </div>
+        <div class="portfolio-body">
+            <div class="row justify-content-evenly px-4">
+                <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                    <div class="card">
+                        <img src="images/text to speech converter.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Text To Speech converter</h4>
+                            <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                            <span class="badge bg-secondary badge-pill">JavaScript</span>
+                            <span class="badge bg-secondary badge-pill mb-2"> web app</span><br />
+                            <a href="folder/index1.html" class="link">Use Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                    <div class="card">
+                        <img src="images/calculator.jpg" class="card-img-top" height="294px" alt="..." />
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Calculator</h4>
+                            <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                            <span class="badge bg-secondary badge-pill">JavaScript</span>
+                            <span class="badge bg-secondary badge-pill mb-2">Web App</span><br />
+                            <a href="folder-a/index.html" class="read-more-btn link">Use Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post col-md-4 webapp all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                    <div class="card">
+                        <img src="images/netflix.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Netflix Clone</h4>
+                            <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                            <span class="badge bg-secondary badge-pill">JavaScript</span>
+                            <span class="badge bg-secondary badge-pill mb-2">WebApp</span><br />
+                            <a href="netflix/index.html" class="read-more-btn link">Use Live</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-evenly mt-4 px-4">
+                <div class="post col-md-4 game all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                    <div class="card">
+                        <img src="images/age converter.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Date Calculator</h4>
+                            <span class="badge bg-secondary badge-pill">HTML&CSS</span>
+                            <span class="badge bg-secondary badge-pill">JavaScript</span>
+                            <span class="badge bg-secondary badge-pill mb-2">App</span><br />
+                            <a href="/folder-a/index1.html" class="read-more-btn link">Use Live</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post col-md-4 website all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                    <div class="card">
+                        <img src="images/Comming soon.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Comming soon</h4>
+                            <span class="badge bg-secondary badge-pill">Python</span>
+                            <span class="badge bg-secondary badge-pill"></span>
+                            <span class="badge bg-secondary badge-pill mb-2"></span><br />
+                            <a href="#" class="read-more-btn link">Wait </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="post col-md-4 all col-10 mt-3 mt-md-0" data-aos="fade-up">
+                    <div class="card">
+                        <img src="images/whatnext.webp" class="card-img-top" alt="..." />
+                        <div class="card-body text-center">
+                            <h4 class="card-title">What to do Next</h4>
+                            <span class="badge bg-secondary badge-pill"></span>
+                            <span class="badge bg-secondary badge-pill"></span>
+                            <span class="badge bg-secondary badge-pill mb-2">........</span><br />
+                            <a href="#" class="read-more-btn link">Suggest</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio section ends here -->
+
+    <!-- blog section starts -->
+    <section class="blog mt-5 pb-5" id="blog">
+        <div class="heading text-center pt-5">
+            <small>Latest News</small>
+            <h3>Blog & Articles</h3>
+        </div>
+        <div class="row justify-content-evenly px-4 mt-4" data-aos="fade-up">
+            <div class="blogpost col-md-4 col-10 mt-2 mt-md-0 game all">
+                <div class="card">
+                    <img src="images/text to speech converter.jpg" class="card-img-top rounded-4" alt="..." />
+                    <div class="card-body px-4">
+                        <small>By Manish Sharma</small><span class="ms-3">Dec 27,2024</span>
+                        <h4 class="card-title">
+                            <a href="">Turning Text into Speech Effortlessly</a>
+                        </h4>
+                        <p class="text-muted">
+                            Discover how innovative text-to-speech technology can 
+                            revolutionize accessibility and enhance digital interactions.
+                        </p>
+                        <a href="#" class="read-more-btn link" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal1">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 website all">
+                <div class="card">
+                    <img src="images/calculator.jpg" class="card-img-top rounded-4" height="294px" alt="..." />
+                    <div class="card-body px-4">
+                        <small>By Manish Sharma</small><span class="ms-3">MAR 20,2024</span>
+                        <h4 class="card-title">
+                            <a href="">Building a Simple Yet Powerful Calculator</a>
+                        </h4>
+                        <p class="text-muted">
+                            Learn how I developed an efficient calculator using modern web 
+                            technologies to perform accurate and quick calculations.
+                        </p>
+                        <a href="#" class="read-more-btn link" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal2">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blogpost col-md-4 col-10 mt-5 mt-md-0 webapp all">
+                <div class="card">
+                    <img src="images/age converter.jpg" class="card-img-top rounded-4" alt="..." />
+                    <div class="card-body px-4">
+                        <small>By Manish Sharma</small><span class="ms-3">Dec 27,2024</span>
+                        <h4 class="card-title">
+                            <a href="">The Evolution of Age Converter Apps in 2024</a>
+                        </h4>
+                        <p class="text-muted">
+                            Age converter apps in 2024 go beyond calculations, now helping with time zone and unit conversions, and continue to evolve.
+                        </p>
+                        <a href="#" class="read-more-btn link" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal3">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- here we will make modals if Read more link is clicked the modal will popup -->
+
+            <!-- for text to speech converter starts here  -->
+            <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal">
+                            <i class="bi bi-x-circle-fill"></i>
+                        </button>
+
+                        <div class="modal-body px-4">
+                            <div class="img">
+                                <img src="images/text to speech converter.jpg" class="img-fluid" alt="" />
+                            </div>
+                            <div class="content mt-3">
+                                <small>By Manish Sharma</small><span class="text-muted ms-2">Dec 27,2024</span>
+                                <h4 class="card-title mt-3">
+                                    The Power of Text-to-Speech Converters in 2024
+                                </h4>
+                                <div class="social-links mt-4">
+                                    <button><a href="https://www.facebook.com/profile.php?id=100086450979626"
+                                            class="rounded-pill facebook" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-facebook"></i> </a>
+                                    </button>
+                                    <button> <a href="https://wa.me/977986987224" class="rounded-pill whatsapp"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-whatsapp"></i> </a>
+                                    </button>
+                                    <button> <a href="mailto:manish.234th@gmail.com" class="rounded-pill email"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-envelope"></i></a>
+                                    </button>
+                                </div>
+
+                            </div>
+                            <p class="text-muted mt-3">
+                                Text-to-speech converters are revolutionizing accessibility and
+                                 user experience in 2024. With improved AI
+                                and natural-sounding voices, these tools are enhancing 
+                                communication, helping with learning, and making
+                                digital content more accessible to everyone.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- text to speech converter ends here -->
+
+            <!-- calculator section starts here -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal">
+                            <i class="bi bi-x-circle-fill"></i>
+                        </button>
+
+                        <div class="modal-body px-4">
+                            <div class="img">
+                                <img src="images/calculator.jpg" class="img-fluid" alt="....." />
+                            </div>
+                            <div class="content mt-3">
+                                <small>By Manish Sharma</small><span class="text-muted ms-2 ms-md-0">Dec 27,2024</span>
+                                <h4 class="card-title mt-3">
+                                    The Future of Calculator Apps: More Than Just Simple Arithmetic
+                                </h4>
+                                <div class="social-links mt-4">
+                                    <button><a href="https://www.facebook.com/profile.php?id=100086450979626"
+                                            class="rounded-pill facebook" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-facebook"></i> </a>
+                                    </button>
+                                    <button> <a href="https://wa.me/977986987224" class="rounded-pill whatsapp"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-whatsapp"></i> </a>
+                                    </button>
+                                    <button> <a href="mailto:manish.234th@gmail.com" class="rounded-pill email"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-envelope"></i></a>
+                                    </button>
+                                </div>
+                                <p class="text-muted mt-3">
+                                    Calculator apps have evolved beyond basic functions, offering
+                                     advanced features like unit conversion, graphing, and
+                                      financial calculations. Today’s apps are smarter, making
+                                       calculations faster and more accessible across devices.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- CalculatorSECTION ENDS HERE  -->
+            <!-- age calculator section starts here  -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <button type="button" class="btn-c rounded-pill" data-bs-dismiss="modal">
+                            <i class="bi bi-x-circle-fill"></i>
+                        </button>
+
+                        <div class="modal-body px-4">
+                            <div class="img">
+                                <img src="images/age converter.jpg" class="img-fluid" alt="" />
+                            </div>
+                            <div class="content mt-3">
+                                <small>By Manish Sharma</small><span class="text-muted ms-2 ms-md-0">sept 14,2024</span>
+                                <h4 class="card-title mt-3">
+                                    Age Converter Apps: Simplifying the Way We Calculate Age
+                                </h4>
+                                <div class="social-links mt-4">
+                                    <button><a href="https://www.facebook.com/profile.php?id=100086450979626"
+                                            class="rounded-pill facebook" target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-facebook"></i> </a>
+                                    </button>
+                                    <button> <a href="https://wa.me/977986987224" class="rounded-pill whatsapp"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-whatsapp"></i> </a>
+                                    </button>
+                                    <button> <a href="mailto:manish.234th@gmail.com" class="rounded-pill email"
+                                            target="_blank" rel="noopener noreferrer">
+                                            <i class="bi bi-envelope"></i></a>
+                                    </button>
+                                </div>
+                                <p class="text-muted mt-3">
+                                    Age converter apps have become a valuable tool for quickly
+                                     calculating age in years, months, days, and even minutes.
+                                      With user-friendly interfaces and high accuracy, these 
+                                      apps are essential for a variety of personal and professional uses.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- age calculator section ends here -->
+
+    <!-- blog section ends here -->
+
+    <!-- contact section starts -->
+    <section class="contact py-5" id="contact">
+        <div class="heading text-center">
+            <small>Get in Touch</small>
+            <h3>Any Questions? Feel Free to Contact</h3>
+        </div>
+        <div class="row justify-content-evenly mt-5">
+            <div class="col-md-5 col-10 contact-details" data-aos="slide-right">
+                <div class="row justify-content-evenly">
+                    <div class="col-1">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                    <div class="col-11">
+                        <p>TULSIPUR-3,Dadakhutti, Dang, Nepal</p>
+                    </div>
+                </div>
+                <div class="row justify-content-evenly">
+                    <div class="col-1">
+                        <i class="bi bi-telephone-fill"></i>
+                    </div>
+                    <div class="col-11">
+                        <p>+977 9869879224</p>
+                    </div>
+                </div>
+                <div class="row justify-content-evenly">
+                    <div class="col-1">
+                        <i class="bi bi-send-fill"></i>
+                    </div>
+                    <div class="col-11">
+                        <p>sharma.250th@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <!-- form section starts here  -->
+            <div class="col-md-5 col-10 mt-3 mt-md-0" data-aos="slide-left">
+                <div class="contact-form">
+                    <div class="heading px-2">
+                        <h3 class="fs-3 ms-3">Get in Touch with me </h3>
+                    </div>
+                    <form class="contact-form ms-3 mt-3 pb-4 px-2" action="https://formsubmit.co/sharma.250th@gmail.com" method="POST">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Name" required />
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="E-mail" required />
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required />
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" id="message" name="message" placeholder="Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="c-btn h-btn mt-3 py-2 px-4 rounded-pill">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>      
+        </div>
+    </section>
+    <!-- contact section ends here -->
+
+    <!-- now we will make back to top button when user click on it it will be redirected to top page  -->
+    <button type="button" class="btn btn-floating btn-lg rounded-pill" id="btn-back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- footer section starts  -->
+    <footer class="text-center text-muted py-4">
+        <h3 class="text-white pt-4" data-aos="fade-up">Portfolio</h3>
+        <div class="link-group mt-5" data-aos="fade-up">
+            <a href="#home">Home</a>
+            <div class="vr"></div>
+            <a href="#about">About</a>
+            <div class="vr"></div>
+            <a href="#service">Service</a>
+            <div class="vr"></div>
+            <a href="#portfolio">Portfolio</a>
+            <div class="vr"></div>
+            <a href="#blog">Blog</a>
+            <div class="vr"></div>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="social-links mt-4">
+            <button><a href="https://www.facebook.com/profile.php?id=100086450979626" class="rounded-pill facebook"
+                    target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-facebook"></i> </a>
+            </button>
+            <button> <a href="https://wa.me/977986987224" class="rounded-pill whatsapp" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="bi bi-whatsapp"></i> </a>
+            </button>
+            <button> <a href="mailto:manish.234th@gmail.com" class="rounded-pill email" target="_blank"
+                    rel="noopener noreferrer">
+                    <i class="bi bi-envelope"></i></a>
+            </button>
+            <button> <a href="https://github.com/manish123-fd" class="rounded-pill github" target="_blank"
+                 rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                </a>
+            </button>
+            <button>
+                <a href="https://www.linkedin.com/in/manish-sharma-613864343/?trk=opento_sprofile_topcard" class="rounded-pill linkedin" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+            </button>
+            <button>
+                <a href="https://x.com/Manish250th" class="rounded-pill twitter" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-twitter"></i>
+                </a>
+            </button>
+        </div>
+        <hr class="text-muted my-4" />
+
+        <p>Copyright 2024 Portfolio | All Rights Reserved to the owner - [Manish Sharma❤]</p>
+    </footer>
+    <!-- footer section ends here -->
+
+    <!-- bootstrap javascript cdn link  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+    <!-- AOS library javascript link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // initializing AOS library
+        AOS.init({
+            duration: 1000,
+            offset: 50,
+        });
+    </script>
+    <!-- custom js file linking -->
+    <script src="js/script.js"></script>
+</body>
+</html>
