@@ -1,5 +1,6 @@
 /* appling google font over the website  */
 body{
+  width: 100%;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
 }
