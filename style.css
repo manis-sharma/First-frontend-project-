@@ -1,13 +1,32 @@
 /* appling google font over the website  */
+/* Ensure no horizontal overflow */
 html, body {
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
     width: 100%;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 400;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
 }
+
+/* Prevent large images from overflowing */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Ensure containers don’t exceed the screen width */
+.container {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Apply box-sizing to avoid unwanted spacing */
 * {
     box-sizing: border-box;
 }
+
 
 /* styling menu icon */
 .nav-menu {
