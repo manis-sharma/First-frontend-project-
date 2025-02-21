@@ -1,3 +1,24 @@
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+            const navLinks = document.querySelector('.nav-links');
+            const hamburger = document.querySelector('.hamburger');
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                hamburger.classList.remove('active');
+            }
+        }
+    });
+});
+
+const hamburger = document.querySelector('.hamburger');
+hamburger.addEventListener('click', () => {
+    document.body.style.overflow = 
+        document.body.style.overflow === 'hidden' ? 'auto' : 'hidden';
+});
 
 function setProgress(element, percentage, color) {
     const progressValue = element.querySelector(".progress-value");
